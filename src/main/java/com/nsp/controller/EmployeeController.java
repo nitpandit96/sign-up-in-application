@@ -25,4 +25,8 @@ public class EmployeeController {
         employeeService.signIn(email,pass);
         return ResponseEntity.ok("Employee Sign In Successfully");
     }
+    @GetMapping("/test")
+    private  String test(){
+        return "Test";
+    }
 }
